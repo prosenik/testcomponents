@@ -1,0 +1,19 @@
+// Generated with util/create-component.js
+@import "../variables.scss";
+@import "../typography.scss";
+
+.componentName--default {
+  @include font-defaults;
+}
+
+.r2o-content-container {
+  background-color: rgba(226, 31, 226, 0.148);
+  margin-top: 60px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

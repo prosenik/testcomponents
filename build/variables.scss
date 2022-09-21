@@ -1,0 +1,18 @@
+// Variables
+$r2o-black: #131111;
+$r2o-white: #e0e0e0;
+$r2o-red: #ff2323;
+$r2o-green: #005f20;
+$r2o-blue: #070bce;
+
+:root {
+  --background: #fff;
+  --font-color: #494949;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #3c3c3c;
+    --font-color: #fafafa;
+  }
+}

@@ -1,0 +1,102 @@
+// Generated with util/create-component.js
+@import "../variables.scss";
+@import "../typography.scss";
+
+.r2o-basket {
+  background-color: rgba(1, 1, 40, 0.311);
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.r2o-basket--footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #ebebeb;
+  align-items: flex-end;
+  justify-content: flex-end;
+  /* position: absolute; */
+  width: 100%;
+}
+
+@media screen and (min-width: 767px) {
+  .r2o-basket {
+    position: relative;
+    min-width: 375px;
+    width: 375px;
+
+    border-top-right-radius: 25px;
+    height: calc(100% - 5rem);
+  }
+}
+.r2o-basket {
+  padding: 1rem;
+  display: flex;
+}
+.r2o-basket-currentOrder {
+  flex-grow: 1;
+
+  overflow-y: auto;
+  max-height: initial;
+}
+
+/* width */
+.r2o-basket-currentOrder::-webkit-scrollbar {
+  width: 0px;
+}
+
+.r2o-basket-currentOrder.no-order {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.r2o-basket-header {
+  display: flex;
+}
+.currentOrder--totalAmount {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.currentOrder--totalAmount:before {
+  content: "€";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  opacity: 0.9;
+  padding-right: 4px;
+}
+
+.currentOrder--totalProductNumber {
+  font-size: 16px;
+
+  line-height: 28px;
+  color: #7f7f7f;
+}
+.currentOrder--totalProductNumber:after {
+  content: "|";
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 767px) {
+  .r2o-basket {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    padding: 0px;
+    width: 100%;
+  }
+}
