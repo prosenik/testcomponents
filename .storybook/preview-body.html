@@ -1,0 +1,27 @@
+<div class="extended-toolbar">
+  <div class="r2o-select_container">
+    <label for="theme-switcher">Theme switcher</label>
+
+    <select onchange="addTheme(this.value)" id="theme-switcher">
+      <option value="r2o-theme_core--light" selected>Core theme (Light mode)</option>
+      <option value="r2o-theme_core--dark">Core theme (Dark mode)</option>
+    </select>
+  </div>
+
+  <div class="report">
+    <a
+    href="https://github.com/ready2order/.../issues/new/choose"
+    class="link"
+      target="_blank">
+        Create a web issue
+    </a>
+
+  </div>
+</div>
+
+<script>
+  function addTheme(value) {
+    document.documentElement.removeAttribute('class');
+    document.documentElement.setAttribute('class', value);
+  }
+</script>
